@@ -12,6 +12,31 @@ body {
 	background-color: #78bbcb;
 }
 
+/* Loader */
+
+.loader {
+	display: flex;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background-color: #78bbcb;
+	z-index: 1000;
+	justify-content: center;
+	align-items: center;
+	opacity: 100%;
+	transition: opacity 0.2s ease-in;
+	animation: duracion-loader;
+}
+
+.loader img {
+	height: 250px;
+	width: auto;
+}
+
+.loader2 {
+	opacity: 0%;
+}
+
 /* Telon */
 
 #telon {
@@ -36,6 +61,7 @@ body {
 
 #telon-izq {
 	animation-name: mover-a-izq;
+	animation-delay: 3.5s;
 	animation-duration: 3.5s;
 	left: 0;
 	animation-fill-mode: forwards;
@@ -43,6 +69,7 @@ body {
 
 #telon-der {
 	animation-name: mover-a-der;
+	animation-delay: 3.5s;
 	animation-duration: 3.5s;
 	animation-fill-mode: forwards;
 	right: 0;
